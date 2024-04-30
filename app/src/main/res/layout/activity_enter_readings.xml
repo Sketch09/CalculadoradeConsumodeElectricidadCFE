@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EnterReadingsActivity">
+
+    <!-- Header: Actualizar Consumo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Consumo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textColor="#000"/>
+
+    <!-- Instruction Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el valor de tu medidor"
+        android:textSize="18sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"/>
+
+    <!-- Input Field -->
+    <EditText
+        android:id="@+id/editTextMeterValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="0.00 kWh"/>
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce la fecha (yyyy-dd-mm)"
+        android:inputType="date" />
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Data (Debug)" />
+
+</LinearLayout>

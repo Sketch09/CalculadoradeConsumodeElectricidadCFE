@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header for displaying the text "Tu consumo es de:" -->
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Tu consumo es de:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <!-- TextView for displaying the dynamic number value -->
+    <TextView
+        android:id="@+id/txtConsumptionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeader"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:text="0$"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_blue_dark" />  <!-- Make it visually distinct -->
+
+    <!-- Enter Readings Button -->
+    <Button
+        android:id="@+id/btnEnterReadings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar Lecturas"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/txtConsumptionValue"
+        android:layout_marginTop="40dp" />
+
+    <!-- View Statistics Button -->
+    <Button
+        android:id="@+id/btnViewStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Consumo"
+        android:layout_below="@id/btnEnterReadings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Settings Button -->
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajustes"
+        android:layout_below="@id/btnViewStatistics"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

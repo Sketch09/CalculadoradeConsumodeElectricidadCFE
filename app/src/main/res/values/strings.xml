@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora de Consumo de Electricidad CFE</string>
+    <string name="statistics">Consumo</string>
+        <string-array name="fee_array">
+            <item>1</item>
+            <item>1A</item>
+            <item>1B</item>
+            <item>1C</item>
+        </string-array>
+</resources>
